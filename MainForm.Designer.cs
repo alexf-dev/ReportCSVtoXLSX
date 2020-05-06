@@ -28,33 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnOpenXLSFile = new System.Windows.Forms.Button();
+            this.btnCreateXLSFileReport = new System.Windows.Forms.Button();
             this.tbCSVFileName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCSVOpen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnOpenXLSFile
+            // btnCreateXLSFileReport
             // 
-            this.btnOpenXLSFile.Location = new System.Drawing.Point(399, 18);
-            this.btnOpenXLSFile.Name = "btnOpenXLSFile";
-            this.btnOpenXLSFile.Size = new System.Drawing.Size(75, 31);
-            this.btnOpenXLSFile.TabIndex = 0;
-            this.btnOpenXLSFile.Text = "Run";
-            this.btnOpenXLSFile.UseVisualStyleBackColor = true;
-            this.btnOpenXLSFile.Click += new System.EventHandler(this.btnOpenXLSFile_Click);
+            this.btnCreateXLSFileReport.Location = new System.Drawing.Point(187, 89);
+            this.btnCreateXLSFileReport.Name = "btnCreateXLSFileReport";
+            this.btnCreateXLSFileReport.Size = new System.Drawing.Size(75, 31);
+            this.btnCreateXLSFileReport.TabIndex = 0;
+            this.btnCreateXLSFileReport.Text = "Run";
+            this.btnCreateXLSFileReport.UseVisualStyleBackColor = true;
+            this.btnCreateXLSFileReport.Click += new System.EventHandler(this.btnOpenXLSFile_Click);
             // 
             // tbCSVFileName
             // 
-            this.tbCSVFileName.Location = new System.Drawing.Point(83, 24);
+            this.tbCSVFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbCSVFileName.Location = new System.Drawing.Point(72, 35);
             this.tbCSVFileName.Name = "tbCSVFileName";
-            this.tbCSVFileName.Size = new System.Drawing.Size(250, 20);
+            this.tbCSVFileName.Size = new System.Drawing.Size(259, 21);
             this.tbCSVFileName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 27);
+            this.label1.Location = new System.Drawing.Point(69, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 2;
@@ -62,7 +63,7 @@
             // 
             // btnCSVOpen
             // 
-            this.btnCSVOpen.Location = new System.Drawing.Point(348, 22);
+            this.btnCSVOpen.Location = new System.Drawing.Point(348, 33);
             this.btnCSVOpen.Name = "btnCSVOpen";
             this.btnCSVOpen.Size = new System.Drawing.Size(27, 23);
             this.btnCSVOpen.TabIndex = 3;
@@ -74,11 +75,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 80);
+            this.ClientSize = new System.Drawing.Size(448, 159);
             this.Controls.Add(this.btnCSVOpen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbCSVFileName);
-            this.Controls.Add(this.btnOpenXLSFile);
+            this.Controls.Add(this.btnCreateXLSFileReport);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Мастер отчетов CSV to XLSX";
@@ -89,7 +90,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnOpenXLSFile;
+        private System.Windows.Forms.Button btnCreateXLSFileReport;
         private System.Windows.Forms.TextBox tbCSVFileName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCSVOpen;
